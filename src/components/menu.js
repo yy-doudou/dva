@@ -1,12 +1,12 @@
-/*
-@author  tanzhiling 
-@function 头部菜单栏
-@reducer app
-*/
-
+/**
+ * @author tanzhiling 
+ * @function 头部菜单栏
+ * @reducer app
+ */
 import React from 'react';
-import'./menu.css';``
-export default class Menu extends React.Component{
+import { connect } from 'dva';
+import'./menu.less';
+class Menu extends React.Component{
   constructor(props){
     super(props)
   }
@@ -21,14 +21,20 @@ export default class Menu extends React.Component{
             this.props.menuList.map((v, index) => { 
               return(
                 <li key={index}>
-                  <a href ="">{v.name}</a> 
+                  <a href ="">
+                    <span>{v.title_CN}</span>
+                    <span>{v.title_US}</span>
+                  </a> 
                 </li>
               )
             })
           }
         </ul>   
+        <div className="user"></div>
       </div>
-      
     )
   }
 }
+export default connect(({app}) => (app), (dispatch, own) => {
+  return {dispatch, own}
+ })(Menu);

@@ -1,3 +1,6 @@
+/**
+ * @function Http请求配置
+ */
 import fetch from 'dva/fetch';
 
 function parseJSON(response) {

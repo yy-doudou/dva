@@ -1,25 +1,24 @@
-import React, {PropTypes} from 'react';
-import { connect } from 'dva';
+/**
+ * @author tanzhiling
+ * @function 容器(单页面应用)
+ */
+import React from 'react';
 import Menu from '../../components/menu';
-
-class App extends React.Component {
+import './index.less';
+export default class App extends React.Component {
   constructor(props) {
     super(props);
    }
   render() {
     return (
-      <div >
-          <Menu menuList={this.props.menuList}/>
+      <div className="app">
+          <Menu/>
+          { 
+            this.props.children
+          }
       </div>
     );
   }
 }
 
-App.propTypes = {
-
-};
-
-export default connect(({app}) => (app), (dispatch, own) => {
- return {dispatch, own}
-})(App);
 

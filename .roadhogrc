@@ -4,8 +4,15 @@
   "env": {
     "development": {
       "extraBabelPlugins": [
-        "dva-hmr"
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }]
       ]
     },
-  },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ]
+    }
+  }
 }

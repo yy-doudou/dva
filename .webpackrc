@@ -1,5 +1,11 @@
 {
- "extraBabelPlugins": [
-   ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
- ]
+  "entry": "src/index.js",
+  "disableCSSModules": true,
+  "env": {
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ]
+    }
+  }
 }

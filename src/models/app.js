@@ -1,3 +1,7 @@
+/**
+ * @author tanzhiling
+ * @function app模块数据
+ */
 import {
   query
 } from '../services/api';
@@ -6,19 +10,24 @@ export default {
   state: {
     menuList:[
       {
-        name:"首页",
+        title_CN:"首页",
+        title_US:"Home",
         path:''
       },{
-        name:"技术栈",
+        title_CN:"技术栈",
+        title_US:'Technology',
         path:''
       },{
-        name:"慢生活",
+        title_CN:"慢生活",
+        title_US:'Slow Life',
         path:''
       },{
-        name:"轻松一刻",
+        title_CN:"轻松一刻",
+        title_US:"Relaxed",
         path:''
       },{
-        name:"剑指远方",
+        title_CN:"剑指远方",
+        title_US:'Future',
         path:''
       }
     ]
