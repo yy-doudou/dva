@@ -1,0 +1,13 @@
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+    /* &-left{
+        float: left;
+    }
+    &-right{
+        float: left;
+    } */
+}
+.menuLift{
+    float: left;
+}
