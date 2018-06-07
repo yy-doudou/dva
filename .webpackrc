@@ -1,11 +1,6 @@
 {
-  "entry": "src/index.js",
-  "disableCSSModules": true,
-  "env": {
-    "production": {
-      "extraBabelPlugins": [
-        "transform-runtime"
-      ]
-    }
-  }
+  "disableCSSModules": true, 
+  "extraBabelPlugins": [
+   ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ]
 }

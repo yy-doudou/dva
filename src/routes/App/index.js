@@ -5,7 +5,7 @@
 import React from 'react';
 import Menu from '../../components/menu';
 import './index.less';
-export default class App extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
    }
@@ -13,12 +13,12 @@ export default class App extends React.Component {
     return (
       <div className="app">
           <Menu/>
-          { 
+          {
             this.props.children
           }
       </div>
     );
   }
 }
-
+export default App
 

@@ -1,11 +1,15 @@
 import dva from 'dva';
 import './reset.less';
-
+import {
+  browserHistory
+} from 'dva/router';
 //初始化设置
-const app = dva();
+const app = dva({
+  history: browserHistory
+});
 
 //插件
-app.use({});
+// app.use({});
 
 //Model 模块加载
 app.model(require('./models/app').default);
