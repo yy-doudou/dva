@@ -9,6 +9,9 @@ import {getLocation,getWeather} from '../../utils/common';
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      arr:[1,2,3,4,5]
+    }
   }
   render() {
     return (
@@ -22,24 +25,28 @@ export default class Home extends React.Component {
           </h2>
           <div className="content-left">
             <ul>
-              <li>
-                <h4>程序员请放下你的技术情节，与你的同伴一起进步</h4>
-                <section>
-                  <img src={require('../../assets/app/001.png')} alt=""/>
-                  <p>
-                    如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话，
-                    那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...
-                  </p>
-                </section>
-                <Button type="primary">
-                  阅读全文<Icon type="right" />
-                </Button>
-                <footer>
-                  <span>2018-06-08</span>
-                  <span>作者：tanzhiling</span>
-                  <span>分类：</span>
-                </footer>
-              </li>
+              {this.state.arr.map((v,index)=>{
+                return(
+                  <li key={index}>
+                    <h4>程序员请放下你的技术情节，与你的同伴一起进步</h4>
+                    <section>
+                      <img src={require('../../assets/app/001.png')} alt=""/>
+                      <p>
+                        如果说掌握一门赖以生计的技术是技术人员要学会的第一课的话，
+                        那么我觉得技术人员要真正学会的第二课，不是技术，而是业务、交流与协作，学会关心其他工作伙伴的工作情况和进展...
+                      </p>
+                    </section>
+                    <Button type="primary">
+                      阅读全文<Icon type="right" />
+                    </Button>
+                    <footer>
+                      <span>2018-06-08</span>
+                      <span>作者：tanzhiling</span>
+                      <span>分类：</span>
+                    </footer>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className="content-right">
@@ -51,11 +58,31 @@ export default class Home extends React.Component {
               <h2>
                 <p>最新<span>文章</span></p>
               </h2>
+              <ul>
+              {this.state.arr.map((v,index)=>{
+                return(
+                  <li key={index}>
+                    打了死结的青春，捆死一颗苍白绝望的灵魂
+                  </li>
+                  )
+                })
+              }
+              </ul>
             </div>
             <div className="rank">
               <h2>
                 <p>点击<span>排行</span></p>
               </h2>
+              <ul>
+              {this.state.arr.map((v,index)=>{
+                return(
+                  <li key={index}>
+                    打了死结的青春，捆死一颗苍白绝望的灵魂
+                  </li>
+                  )
+                })
+              }
+              </ul>
             </div>
             <div className="connect">
               <h2>

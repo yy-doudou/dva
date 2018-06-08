@@ -14,9 +14,7 @@ class App extends React.Component {
       <div className="app">
           <Menu/>
           <div className="content">
-          {
-            this.props.children
-          }
+            {this.props.children}
           </div>
       </div>
     );
