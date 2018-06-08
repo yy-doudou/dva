@@ -14,9 +14,9 @@ class Menu extends React.Component{
     return(
       <div className="menu">
         <div className="menu-left">
-          <img src={require('../assets/app/logo.jpg')} alt=""/>
+        LOGO->
         </div>
-        <ul className="menu-right">  
+        <div className="menu-right">  
           {
             this.props.menuList.map((v, index) => { 
               return(
@@ -29,8 +29,17 @@ class Menu extends React.Component{
               )
             })
           }
-        </ul>   
-        <div className="user"></div>
+        </div>   
+        <div className="message">
+          <p>如果要在自己</p>
+          <p>年轻的时候做更多的梦</p>
+          <p>就一定要找到那些</p>
+          <p>能和你一起做梦的朋友</p>
+        </div>
+        <div className="user">
+          <img src={require('../assets/app/user.jpg')} alt=""/>
+          <a>tanzhiling</a>
+        </div>
       </div>
     )
   }

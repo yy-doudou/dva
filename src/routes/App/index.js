@@ -13,9 +13,11 @@ class App extends React.Component {
     return (
       <div className="app">
           <Menu/>
+          <div className="content">
           {
             this.props.children
           }
+          </div>
       </div>
     );
   }

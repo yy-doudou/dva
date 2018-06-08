@@ -8,6 +8,9 @@
     }
     .content {
         width: 1000px;
+        background: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
         margin: auto;
         >h2 {
             font: 18px "微软雅黑", Arial, Helvetica, sans-serif;
@@ -18,53 +21,127 @@
             p {
                 background: #fff;
                 width: 90px;
-                span{
+                span {
                     color: #FE5187;
                 }
             }
         }
-        &-left{
+        &-left {
             float: left;
-            ul{
-                width: 740px;
+            ul {
+                width: 700px;
                 overflow: hidden;
+                padding-right: 20px;
                 background: url(../../assets/app/r_line.jpg) repeat-y right;
-                li{
+                li {
                     overflow: hidden;
                     position: relative;
-                    h4{
+                    h4 {
                         color: #333;
                         font-size: 14px;
                         font-weight: bold;
                         line-height: 30px;
                     }
-                    img{
-                        float: left;
-                        padding: 4px;
-                        border: #f4f2f2 1px solid;
-                        width: 175px;
-                        margin-right: 20px;
+                    section{
+                        overflow: hidden;
+                        img {
+                            float: left;
+                            padding: 4px;
+                            clear: both;
+                            border: #f4f2f2 1px solid;
+                            width: 175px;
+                        }
+                        p {
+                            font-size: 12px;
+                            padding: 0 20px;
+                            overflow: hidden;
+                        }
                     }
-                    p{
-                        font-size: 12px;
-                        padding: 0 20px;
-                    }
-                    button{
+                    button {
                         position: absolute;
                         right: 20px;
                         top: 100px;
                     }
+                    footer{
+                        clear: both;
+                        margin: 20px 0;
+                        background: #f6f6f6;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        padding: 0 20px;
+                        line-height: 26px;
+                        span{
+                            display: inline-block;
+                        }
+                        span:first-child{
+                            padding-left: 20px;
+                            background: url('../../assets/app/time.jpg') no-repeat left center;
+                        }
+                        span:nth-of-type(2){
+                            width: 160px;
+                            margin: 0 20px;
+                        }
+                    }
                 }
             }
         }
-        &-right{
+        &-right {
             float: right;
             width: 250px;
             overflow: hidden;
-            .weather{
+            .weather {
                 width: 250px;
                 height: 88px;
-                background: url('../../assets/app/weather_bg.jpg')
+                position: relative;
+                background: url('../../assets/app/weather_bg.jpg');
+                p {
+                    position: absolute;
+                    font-weight: bold;
+                    top: 20px;
+                    color: #333;
+                    left: 60px;
+                    span {
+                        display: block;
+                    }
+                }
+                p:last-child {
+                    left: 160px;
+                }
+            }
+            h2 {
+                font-size: 14px;
+                background: url(../../assets/app/r_title_bg.jpg) repeat-x center;
+                p {
+                    background: #fff;
+                    width: 70px;
+                }
+            }
+            .article{
+                h2{
+                    p{
+                        span{
+                            color:#65b020;
+                        }
+                    }
+                }
+            }
+            .rank{
+                h2{
+                    p{
+                        span{
+                            color:#37ccca;
+                        }
+                    }
+                }
+            }
+            .connect{
+                h2{
+                    p{
+                        span{
+                            color:#F17B6B;
+                        }
+                    }
+                }
             }
         }
     }
