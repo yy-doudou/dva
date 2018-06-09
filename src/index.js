@@ -1,5 +1,5 @@
 import dva from 'dva';
-import './reset.less';
+import './index.less';
 import {
   browserHistory
 } from 'dva/router';

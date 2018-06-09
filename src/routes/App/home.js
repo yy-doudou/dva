@@ -18,6 +18,18 @@ export default class Home extends React.Component {
       <div className="home">
         <div className="banner">
           <img src={require('../../assets/app/banner.jpg')} alt="" />
+          <div className="banner-content">
+            <div className="message">
+              <p>如果要在自己</p>
+              <p>年轻的时候做更多的梦</p>
+              <p>就一定要找到那些</p>
+              <p>能和你一起做梦的朋友</p>
+            </div>
+            <div className="user">
+              <img src={require('../../assets/app/user.jpg')} alt=""/>
+              <a>tanzhiling</a>
+            </div>
+          </div>
         </div>
         <div className="content">
           <h2>

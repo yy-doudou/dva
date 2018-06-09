@@ -16,7 +16,7 @@ export default {
       },{
         title_CN:"技术栈",
         title_US:'Technology',
-        path:''
+        path:'/skill'
       },{
         title_CN:"慢生活",
         title_US:'Slow Life',
